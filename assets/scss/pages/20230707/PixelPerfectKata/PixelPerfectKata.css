@@ -1,0 +1,24 @@
+* {
+  line-height: 1.5;
+}
+.wrap {
+  width: 640px;
+  margin: 0 auto;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.item {
+  display: flex;
+  margin-bottom: 24px;
+}
+.item img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.botton {
+  text-align: center;
+  padding: 52px;
+}

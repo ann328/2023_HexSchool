@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+
+$secondary: #949494;
+$danger: #ae0000;
+
+@mixin header_fontsize {
+  font-size: 128px;
+  letter-spacing: 15.36px;
+}
+@mixin detail_list {
+  width: 636px;
+  margin-bottom: 40px;
+}
+@mixin list_h3 {
+  color: $danger;
+  font-size: 40px;
+  margin-bottom: 16px;
+  border-bottom: 3px solid $danger;
+}
+@mixin list_link {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Castoro", serif;
+
+  .header {
+    width: 1282px;
+    margin: 0 auto;
+    h1 {
+      @include header_fontsize;
+      padding-top: 160px;
+    }
+    .me_img {
+      width: 636px;
+      height: 848px;
+      margin: 0 auto;
+      vertical-align: middle;
+    }
+    h2 {
+      @include header_fontsize;
+      width: 50%;
+      margin-left: auto;
+    }
+  }
+  .myself {
+    background: #efefef;
+    padding: 48px 0;
+    margin-bottom: 80px;
+    .introduce {
+      width: 50%;
+      margin-left: auto;
+
+      font-size: 32px;
+    }
+  }
+
+  .detail {
+    width: 1282px;
+    margin: 0 auto;
+    .vito_evans {
+      @include detail_list;
+      h3 {
+        @include list_h3;
+      }
+      a {
+        display: block;
+        margin-bottom: 8px;
+        @include list_link;
+        &:hover {
+          color: $danger;
+        }
+      }
+    }
+    .education {
+      @include detail_list;
+      h3 {
+        @include list_h3;
+      }
+      li {
+        margin-bottom: 16px;
+        font-size: 24px;
+        p:nth-child(1) {
+          color: $secondary;
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+    .work {
+      @include detail_list;
+      h3 {
+        @include list_h3;
+      }
+      li {
+        margin-bottom: 16px;
+        font-size: 24px;
+        p:nth-child(1) {
+          color: $secondary;
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+    .awards {
+      @include detail_list;
+      h3 {
+        @include list_h3;
+      }
+      li {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .footer {
+    background-color: #000;
+    padding: 64px;
+    margin-top: 160px;
+    .content {
+      text-align: center;
+      a {
+        &:nth-child(2) {
+          margin: 0 40px;
+        }
+        img {
+          width: 64px;
+          height: 64px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
