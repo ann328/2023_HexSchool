@@ -22,15 +22,13 @@ $danger: #ae0000;
   font-size: 24px;
   text-decoration: none;
 }
-
 body {
   margin: 0 auto;
   box-sizing: border-box;
   line-height: 1.5;
   font-family: "Castoro", serif;
-
   .header {
-    width: 1282px;
+    width: 1296px;
     margin: 0 auto;
     h1 {
       @include header_fontsize;
@@ -61,60 +59,54 @@ body {
   }
 
   .detail {
-    width: 1282px;
+    width: 1296px;
     margin: 0 auto;
-    .vito_evans {
-      @include detail_list;
+    .detail_list {
+      width: 50%;
       h3 {
         @include list_h3;
       }
-      a {
-        display: block;
-        margin-bottom: 8px;
-        @include list_link;
-        &:hover {
-          color: $danger;
+      .vito_evans {
+        @include detail_list;
+        a {
+          display: block;
+          margin-bottom: 8px;
+          @include list_link;
+          &:hover {
+            color: $danger;
+          }
         }
       }
-    }
-    .education {
-      @include detail_list;
-      h3 {
-        @include list_h3;
-      }
-      li {
-        margin-bottom: 16px;
-        font-size: 24px;
-        p:nth-child(1) {
-          color: $secondary;
-          font-size: 20px;
-          font-style: italic;
+      .education {
+        @include detail_list;
+        li {
+          margin-bottom: 16px;
+          font-size: 24px;
+          p:nth-child(1) {
+            color: $secondary;
+            font-size: 20px;
+            font-style: italic;
+          }
         }
       }
-    }
-    .work {
-      @include detail_list;
-      h3 {
-        @include list_h3;
-      }
-      li {
-        margin-bottom: 16px;
-        font-size: 24px;
-        p:nth-child(1) {
-          color: $secondary;
-          font-size: 20px;
-          font-style: italic;
+      .work {
+        @include detail_list;
+        li {
+          margin-bottom: 16px;
+          font-size: 24px;
+          p:nth-child(1) {
+            color: $secondary;
+            font-size: 20px;
+            font-style: italic;
+          }
         }
       }
-    }
-    .awards {
-      @include detail_list;
-      h3 {
-        @include list_h3;
-      }
-      li {
-        font-size: 24px;
-        margin-bottom: 12px;
+      .awards {
+        @include detail_list;
+        li {
+          font-size: 24px;
+          margin-bottom: 12px;
+        }
       }
     }
   }
@@ -124,14 +116,17 @@ body {
     margin-top: 160px;
     .content {
       text-align: center;
-      a {
+      li {
+        display: inline-block;
         &:nth-child(2) {
           margin: 0 40px;
         }
-        img {
-          width: 64px;
-          height: 64px;
-          vertical-align: middle;
+        a {
+          img {
+            width: 64px;
+            height: 64px;
+            vertical-align: middle;
+          }
         }
       }
     }
