@@ -33,7 +33,7 @@ export default defineConfig({
   ],
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: "pages/20230707/20230707Week01/Vito'sCurriculumVitae.html",
+    open: "pages/20230714/20230714Week02Kata/William'sCurriculumVitaeKata.html",
   },
   build: {
     rollupOptions: {

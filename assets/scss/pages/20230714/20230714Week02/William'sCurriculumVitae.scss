@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+$secondary: #000;
+$others: aqua;
+
+@mixin small_botton {
+  width: 185px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    background-color: $others;
+    color: $secondary;
+  }
+}
+@mixin df-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive;
+  color: #fff;
+  .container {
+    width: 1296px;
+    margin: 0 auto;
+  }
+  .container_padding {
+    width: 1296px;
+    margin: 0 auto;
+    padding: 160px 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: $others;
+    }
+  }
+  img {
+    vertical-align: middle;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+header {
+  background-color: $secondary;
+  .nav {
+    padding-top: 40px;
+    @include df-jcsb;
+  }
+  .banner {
+    padding: 72px 0;
+    @include df-jcsb;
+    align-items: center;
+  }
+}
+.img_me {
+  width: 636px;
+}
+.william {
+  width: 636px;
+  h1 {
+    font-size: 128px;
+    color: #00ffa3;
+    text-align: right;
+  }
+}
+.botton_white_contact_me {
+  a {
+    @include small_botton;
+    margin-left: auto;
+    background-color: #fff;
+    color: $secondary;
+  }
+}
+//
+.introduction {
+  background-image: url(../../../../../assets/images/pages/20230714/20230714Week02Kata/background-img.png);
+  .container_padding {
+    @include df-jcsb;
+  }
+}
+.introduction_contain {
+  width: 526px;
+  h2 {
+    margin-bottom: 36px;
+  }
+  p {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  ul {
+    display: flex;
+    li:nth-child(2) {
+      margin: 0 16px;
+    }
+  }
+}
+.introduction_img {
+  display: flex;
+  li:nth-child(2) {
+    margin: 0 24px;
+  }
+}
+//
+.about_me {
+  .container_padding {
+    @include df-jcsb;
+    color: $secondary;
+  }
+}
+.good_point_list {
+  @include df-jcsb;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 636px;
+  li {
+    width: 306px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+}
+.about_me_contain {
+  width: 526px;
+  h2 {
+    margin-bottom: 36px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+//
+.contact_me {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+  .container {
+    @include df-jcsb;
+  }
+}
+.contact_me_contain {
+  @include df-jcsb;
+  align-items: center;
+  width: 657px;
+}
+.contact_method {
+  @include df-jcsb;
+  width: 526px;
+  li {
+    a {
+      display: block;
+      img {
+        width: 162px;
+        height: 162px;
+      }
+    }
+    &:nth-child(2) {
+      margin: 0 20px;
+    }
+  }
+}
+//
+.my_projects {
+  color: $secondary;
+}
+.my_projects_title {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.my_projects_contain {
+  @include df-jcsb;
+  .projects_computer {
+    width: 416px;
+  }
+  .projects_others {
+    width: 856px;
+  }
+}
+.projects_others_contain {
+  @include df-jcsb;
+}
+.others_contain {
+  width: 636px;
+  margin-bottom: 28px;
+  p {
+    margin-bottom: 76px;
+  }
+}
+.botton_black_see_more {
+  a {
+    @include small_botton;
+    background-color: $secondary;
+    color: #fff;
+  }
+}
+.projects_img_list {
+  @include df-jcsb;
+}
+//
+footer {
+  background-color: $secondary;
+  padding: 40px 0;
+  text-align: center;
+}

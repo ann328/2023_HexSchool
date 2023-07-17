@@ -8,11 +8,15 @@
 .top {
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
 }
 .item {
   display: flex;
   margin-bottom: 24px;
+}
+.item_contain h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 .item img {
   vertical-align: middle;
