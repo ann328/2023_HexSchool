@@ -166,6 +166,11 @@ header {
         width: 162px;
         height: 162px;
       }
+      &:hover {
+        border-radius: 64px;
+        box-shadow: 1px 1px 30px 3px #fff;
+        filter: drop-shadow(0 0 10px #fff);
+      }
     }
     &:nth-child(2) {
       margin: 0 20px;
