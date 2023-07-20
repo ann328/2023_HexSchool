@@ -1,0 +1,29 @@
+@mixin df-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin wdw($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+}
+$primary: #aa0601;
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
