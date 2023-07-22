@@ -1,31 +1,32 @@
 header {
   background: $primary;
 }
-.container {
+.header-container {
   @include df-jcsb;
+  @include container;
   padding: 16px 0;
-  @include wdw(1296px) {
+  @include pc {
     padding: 12px 36px;
   }
-  @include wdw(992px) {
+  @include tab {
     padding: 12px 36px;
   }
-  @include wdw(767px) {
+  @include phone {
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
 }
 
-.glasses_logo_img {
-  @include wdw(767px) {
+.header-logo_img {
+  @include phone {
     margin-left: 15px;
     align-self: start;
   }
   img {
     width: 80px;
     height: 48.57px;
-    @include wdw(767px) {
+    @include phone {
       margin: 16px 0;
     }
   }
@@ -35,69 +36,26 @@ header {
   align-items: center;
   width: 492px;
   font-size: 20px;
-  @include wdw(992px) {
+  @include tab {
     font-size: 20px;
   }
-  @include wdw(767px) {
+  @include phone {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  .header_nav_list {
-    @include wdw(767px) {
+  .header_nav-list {
+    @include phone {
       width: 50%;
       border: 1px solid #fff;
     }
     a {
-      color: #fff;
       display: block;
-      @include wdw(767px) {
+      @include phone {
         display: block;
         text-align: center;
-        padding: 12px 64px;
+        padding: 12px 0;
       }
     }
   }
 }
-// @media (max-width: 1296px) {
-//   .container {
-//     padding: 12px 36px;
-//   }
-// }
-// @media (max-width: 992px) {
-//   .container {
-//     // max-width: 920px;
-//     padding: 12px 36px;
-//   }
-//   .header_nav {
-//     font-size: 20px;
-//   }
-// }
-// @media (max-width: 767px) {
-//   .container {
-//     // max-width: 696px;
-//     flex-direction: column;
-//     align-items: center;
-//     padding: 0;
-//   }
-//   .glasses_logo_img {
-//     margin-left: 15px;
-//     align-self: start;
-//     img {
-//       margin: 16px 0;
-//     }
-//   }
-//   .header_nav {
-//     display: flex;
-//     flex-wrap: wrap;
-//     .header_nav_list {
-//       min-width: 50%;
-//       border: 1px solid #fff;
-//       a {
-//         display: block;
-//         text-align: center;
-//         padding: 12px 64px;
-//       }
-//     }
-//   }
-// }
