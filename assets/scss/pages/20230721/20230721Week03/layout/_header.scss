@@ -44,7 +44,7 @@ header {
     flex-wrap: wrap;
     width: 100%;
   }
-  .header-nav_list {
+  .header--nav_list {
     @include phone {
       width: 50%;
       border: 1px solid #fff;

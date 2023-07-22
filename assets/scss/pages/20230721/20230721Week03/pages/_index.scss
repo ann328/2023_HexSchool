@@ -1,3 +1,134 @@
-.index-title {
-  font-size: 100px;
+.header--banner {
+  background-image: url(../../../../images/pages/20230721/20230721Week03/home-header.png);
+  background-size: cover;
+  background-position: center;
+  &-contain {
+    @include container;
+    padding: 296px 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-slogan {
+    color: $secorday;
+    p:first-child {
+      font-size: 36px;
+    }
+    p:nth-child(2) {
+      font-size: 64px;
+      margin-bottom: 4px;
+    }
+  }
+  &-botton {
+    background-color: $primary;
+    padding: 6px 12px;
+    font-size: 20px;
+  }
+  @include pc {
+    background-image: url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
+    &-contain {
+      padding: 296px 36px;
+    }
+  }
+
+  @include tab {
+    background-image: url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
+    &-contain {
+      padding: 296px 36px;
+    }
+  }
+
+  @include phone {
+    &-contain {
+      padding: 144px 14px;
+    }
+    &-slogan {
+      p:first-child {
+        font-size: 16px;
+      }
+      p:nth-child(2) {
+        font-size: 24px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+.section--item_serve {
+  background-color: $other;
+  .section--contain {
+    @include container;
+    padding: 80px 0;
+    text-align: center;
+    h2 {
+      font-size: 48px;
+      color: $secorday;
+      margin-bottom: 24px;
+    }
+    &_list {
+      display: flex;
+      gap: 0 24px;
+      li {
+        width: 306px;
+      }
+      h3 {
+        font-size: 24px;
+        color: $secorday;
+        margin-bottom: 8px;
+      }
+      p {
+        text-align: left;
+      }
+      &_icon {
+        color: $secorday;
+        font-size: 83px;
+        margin-bottom: 16px;
+      }
+      @include pc {
+      }
+    }
+  }
+  @include pc {
+    .section--contain {
+      padding: 80px 36px;
+      &_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px 24px;
+        li {
+          width: 48.275%;
+        }
+      }
+    }
+  }
+  @include tab {
+    .section--contain {
+      padding: 80px 36px;
+      &_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px 24px;
+        li {
+          width: 48.275%;
+        }
+      }
+    }
+  }
+  @include phone {
+    .section--contain {
+      padding: 40px 14px 40px 13px;
+      h2 {
+        font-size: 24px;
+      }
+      &_list {
+        display: flex;
+        gap: 0 24px;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

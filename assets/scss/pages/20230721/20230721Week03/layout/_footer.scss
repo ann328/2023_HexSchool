@@ -33,12 +33,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  .material-symbols-outlined {
+  .footer--nav_contact_icon {
     font-size: 36px;
   }
   @include phone {
     font-size: 16px;
-    .material-symbols-outlined {
+    .footer--nav_contact_icon {
       font-size: 18px;
     }
   }
