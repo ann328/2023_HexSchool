@@ -1,7 +1,7 @@
 header {
   background: $primary;
 }
-.header-container {
+.header--container {
   @include df-jcsb;
   @include container;
   padding: 16px 0;
@@ -18,7 +18,7 @@ header {
   }
 }
 
-.header-logo_img {
+.header--logo_img {
   @include phone {
     margin-left: 15px;
     align-self: start;
@@ -31,7 +31,7 @@ header {
     }
   }
 }
-.header_nav {
+.header--nav {
   @include df-jcsb;
   align-items: center;
   width: 492px;
@@ -44,7 +44,7 @@ header {
     flex-wrap: wrap;
     width: 100%;
   }
-  .header_nav-list {
+  .header-nav_list {
     @include phone {
       width: 50%;
       border: 1px solid #fff;

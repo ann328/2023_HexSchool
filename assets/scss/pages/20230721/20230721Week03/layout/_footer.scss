@@ -1,6 +1,6 @@
 footer {
   background: $primary;
-  .footer-container {
+  .footer--container {
     @include df-jcsb;
     flex-wrap: wrap;
     @include container;
@@ -16,7 +16,7 @@ footer {
     }
   }
 }
-.footer-nav_samll {
+.footer--nav_samll {
   @include df-jcsb;
   width: 464px;
   margin-bottom: 36px;
@@ -27,7 +27,7 @@ footer {
     display: none;
   }
 }
-.footer-nav_contact {
+.footer--nav_contact {
   font-size: 36px;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ footer {
     }
   }
 }
-.footer-nav_img {
+.footer--nav_img {
   @include df-jcsb;
   width: 208px;
   img {
@@ -65,14 +65,14 @@ footer {
     }
   }
 }
-.footer-hr_white {
+.footer--hr_white {
   width: 100%;
   margin: 32px 0 32px 0;
   @include phone {
     margin: 24px 0 16px 0;
   }
 }
-.footer-contain_copyright {
+.footer--contain_copyright {
   width: 100%;
   color: #fff;
   @include df-jcsb;
@@ -83,7 +83,7 @@ footer {
     }
   }
 }
-.footer-contain-nav {
+.footer--contain_nav {
   @include df-jcsb;
   width: 174px;
   @include phone {
