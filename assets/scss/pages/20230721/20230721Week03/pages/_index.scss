@@ -56,13 +56,12 @@
 }
 .section--item_serve {
   background-color: $other;
-  .section--contain {
+  .section--contain_serve {
     @include container;
     padding: 80px 0;
     text-align: center;
     h2 {
-      font-size: 48px;
-      color: $secorday;
+      @include h2;
       margin-bottom: 24px;
     }
     &_list {
@@ -70,6 +69,11 @@
       gap: 0 24px;
       li {
         width: 306px;
+        img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 16px;
+        }
       }
       h3 {
         font-size: 24px;
@@ -79,17 +83,10 @@
       p {
         text-align: left;
       }
-      &_icon {
-        color: $secorday;
-        font-size: 83px;
-        margin-bottom: 16px;
-      }
-      @include pc {
-      }
     }
   }
   @include pc {
-    .section--contain {
+    .section--contain_serve {
       padding: 80px 36px;
       &_list {
         display: flex;
@@ -103,7 +100,7 @@
     }
   }
   @include tab {
-    .section--contain {
+    .section--contain_serve {
       padding: 80px 36px;
       &_list {
         display: flex;
@@ -117,7 +114,7 @@
     }
   }
   @include phone {
-    .section--contain {
+    .section--contain_serve {
       padding: 40px 14px 40px 13px;
       h2 {
         font-size: 24px;
@@ -125,6 +122,71 @@
       &_list {
         display: flex;
         gap: 24px 0;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.section--item_classic {
+  padding: 80px 0;
+  text-align: center;
+  .section--contain_classic {
+    @include container;
+    h2 {
+      @include h2;
+      margin-bottom: 48px;
+    }
+    &_list {
+      @include df-jcsb;
+      li {
+        width: 416px;
+        img {
+          margin-bottom: 8px;
+        }
+        h3 {
+          @include h3;
+        }
+      }
+    }
+  }
+  @include pc {
+    padding: 80px 216px;
+    .section--contain_classic {
+      &_list {
+        flex-direction: column;
+        gap: 24px 0;
+        li {
+          width: 100%;
+          row-gap: 24px;
+        }
+      }
+    }
+  }
+  @include tab {
+    padding: 80px 216px;
+    .section--contain_classic {
+      &_list {
+        flex-direction: column;
+        gap: 24px 0;
+        li {
+          width: 100%;
+          row-gap: 24px;
+        }
+      }
+    }
+  }
+  @include phone {
+    padding: 40px 14px 40px 13px;
+    .section--contain_classic {
+      h2 {
+        @include h2;
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      &_list {
+        @include df-jcsb;
         li {
           width: 100%;
         }

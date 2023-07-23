@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Roboto:wght@500&display=swap");
 
+$primary: #aa0601;
+$secorday: #650300;
+$other: #fbf2f2;
+
 @mixin df-jcsb {
   display: flex;
   justify-content: space-between;
@@ -7,6 +11,15 @@
 @mixin container {
   max-width: 1296px;
   margin: 0 auto;
+}
+@mixin h2 {
+  font-size: 48px;
+  color: $secorday;
+}
+@mixin h3 {
+  font-size: 48px;
+  color: $primary;
+  font-style: italic;
 }
 
 @mixin pc {
@@ -24,9 +37,7 @@
     @content;
   }
 }
-$primary: #aa0601;
-$secorday: #650300;
-$other: #fbf2f2;
+
 body {
   box-sizing: border-box;
   line-height: 1.5;
