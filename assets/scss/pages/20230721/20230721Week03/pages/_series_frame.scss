@@ -86,6 +86,7 @@
 }
 .section--contain_celluloid_combi {
   @include container;
+  padding: 80px 0;
   text-align: center;
   h2 {
     font-size: 42px;
