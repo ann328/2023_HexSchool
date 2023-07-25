@@ -84,3 +84,14 @@
     }
   }
 }
+.section--contain_celluloid_combi {
+  @include container;
+  text-align: center;
+  h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
