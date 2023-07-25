@@ -40,9 +40,6 @@ $samll: #707070;
     outline: none;
     margin-top: 8px;
     background-color: transparent;
-    // ::placeholder {
-    //   color: #000000;
-    // }
   }
 }
 
@@ -68,8 +65,8 @@ body {
   font-family: "Noto Sans TC", sans-serif, "Roboto", sans-serif;
 }
 img {
-  // vertical-align: middle;
-  display: block;
+  vertical-align: middle;
+  // display: block;
   max-width: 100%;
   height: auto;
 }
