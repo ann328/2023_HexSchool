@@ -194,3 +194,259 @@
     }
   }
 }
+.section--item_jointName {
+  background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  .section--contain_jointName {
+    @include container;
+    text-align: center;
+    h2 {
+      @include h2;
+      color: #fff;
+      margin-bottom: 48px;
+    }
+    &_list {
+      display: flex;
+      &_display {
+        display: none;
+      }
+    }
+    h3 {
+      @include h3;
+      background-color: #fff;
+      padding: 8px 0;
+    }
+  }
+  @include pc {
+    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
+    background-size: cover;
+    padding: 80px 36px;
+    .section--contain_jointName {
+      &_list {
+        flex-direction: column;
+        gap: 24px 0;
+      }
+    }
+  }
+  @include tab {
+    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
+    background-size: cover;
+    padding: 80px 36px;
+    .section--contain_jointName {
+      &_list {
+        flex-direction: column;
+        gap: 24px 0;
+      }
+    }
+  }
+  @include phone {
+    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-md.png);
+    // background-position: center;
+    padding: 40px 14px 40px 13px;
+    .section--contain_jointName {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      &_list {
+        display: none;
+        &_display {
+          display: flex;
+          flex-direction: column;
+          gap: 24px 0;
+        }
+      }
+    }
+  }
+}
+.section--item_customerRecommendation {
+  background-color: #fff;
+  .section--contain_customerRecommendation {
+    @include container;
+    text-align: center;
+    padding: 80px 0;
+    h2 {
+      @include h2;
+      margin-bottom: 48px;
+    }
+    &_list {
+      display: flex;
+      gap: 0 24px;
+      li {
+        width: 306px;
+        img {
+          max-height: 306px;
+        }
+      }
+    }
+    &_recommendation {
+      @include section--contain_customerRecommendation_recommendation;
+    }
+    &_date {
+      color: $samll;
+      font-size: 14px;
+    }
+  }
+  @include pc {
+    .section--contain_customerRecommendation {
+      padding: 80px 36px;
+      &_list {
+        flex-wrap: wrap;
+        gap: 24px;
+        li {
+          width: 48.27%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @include tab {
+    .section--contain_customerRecommendation {
+      padding: 80px 36px;
+      &_list {
+        flex-wrap: wrap;
+        gap: 24px;
+        li {
+          width: 48.27%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @include phone {
+    .section--contain_customerRecommendation {
+      padding: 40px 14px 40px 13px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      &_list {
+        gap: 24px 0;
+        li {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.section--item_conatctUs {
+  background-color: $other;
+  .section--contain_contactUs {
+    padding: 80px 330px;
+    h2 {
+      text-align: center;
+      @include h2;
+      margin-bottom: 48px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    &-name,
+    &-phone,
+    &-email {
+      @include section--contain_contactUs-form-input;
+    }
+    &-opinion {
+      textarea {
+        height: 136px;
+        width: 100%;
+        padding: 6px 12px;
+        outline: none;
+        margin-top: 8px;
+        background-color: transparent;
+        border: 1px solid #000000;
+      }
+    }
+    &-checkbox {
+      margin-bottom: 48px;
+
+      input[type="checkbox"] {
+        color: #000000;
+        display: inline;
+        background-color: transparent;
+        padding: 0 8px;
+        border: 1px solid #000000;
+      }
+    }
+    &-button {
+      text-align: center;
+
+      input[type="button"] {
+        color: #fff;
+        background-color: $primary;
+        width: 416px;
+        height: 56px;
+        border: 1px solid $primary;
+        &:hover {
+          background-color: $secorday;
+          border: 1px solid $secorday;
+        }
+      }
+
+      input[value="確認送出"] {
+        font-family: "Noto Sans TC", sans-serif, "Roboto", sans-serif;
+      }
+    }
+  }
+  @include pc {
+    .section--contain_contactUs {
+      padding: 80px 96px;
+
+      h2 {
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include tab {
+    .section--contain_contactUs {
+      padding: 80px 96px;
+
+      h2 {
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      &-button {
+        input[type="button"] {
+          width: 58.33%;
+        }
+      }
+    }
+  }
+
+  @include phone {
+    .section--contain_contactUs {
+      padding: 40px 14px 40px 13px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      &-button {
+        input[type="button"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -63,3 +63,48 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 - git commit -m 'first commit'
 - git push
 - npm run deploy
+
+## 組長
+
+- 建立工作平台，並將其他人加入進去
+- cd [資料夾位置]
+- git clone [將雲端資料下載在哪個資料夾]
+
+---
+
+- 組長接收到 pull requests
+- 到 Sourcetree，main，看有沒有分支
+- 沒有就可以 git fetch origin [需要審核分支名稱/name]
+- 確認 git checkout [commit(推分支者代號)]
+- 確認完畢，回到 git checkout main
+- git merge origin main (本地合併最新的 main)
+- git fetch origin main (遠端合併最新的 main)
+
+---
+
+## 組員 (協作)
+
+- git clone [GitHub Repositories Url] //下載資料
+- cd [剛剛下載並且要協作的資料夾]
+- git checkout -b [分支名稱/name] //新增分支
+- 開始開發
+- git add .
+- git commit -m 'first commit'
+- git push origin [分支名稱/name]
+- 發 PR，到 github，pull requests>New pull requests>點擊自己的[分支名稱/name]>create pull requests>註解>create pull requests
+
+---
+
+main 有更新
+
+- git fetch origin main (遠端最新的 main)
+- git merge origin main (本地端也要到最新的 main)
+
+---
+
+當 main 分支有不同基礎時
+
+- git fetch origin main (遠端最新的 main)
+- git rebase origin main (讓自己的新分支在最新的本地 main 上)
+- git push origin [分支名稱/name]
+- 發 PR，到 github，pull requests>New pull requests>點擊自己的[分支名稱/name]>create pull requests>註解>create pull requests
