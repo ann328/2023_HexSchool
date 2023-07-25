@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>series_frame</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
-    rel="stylesheet" />
-  <title>series_frame</title>
-</head>
-
-<body>
-  <%- include('./layout/20230721/header'); -%>
-  <div class="header--nav_series_frame">
-    <div class="header--container_series_frame">
+  <body>
+    <%- include('./layout/20230721/header'); -%>
+    <div class="header--nav_series_frame">
+      <div class="header--container_series_frame">
         <ul class="header--container_series_frame_list">
-            <li><a href="#">OPTICAL</a></li>
-            <li><a href="#">SUNGLASSES</a></li>
-            <li><a href="#">FUNCTIONAL</a></li>
+          <li><a href="#">OPTICAL</a></li>
+          <li><a href="#">SUNGLASSES</a></li>
+          <li><a href="#">FUNCTIONAL</a></li>
         </ul>
+      </div>
     </div>
-  </div>
-  <div class="header--banner_optical">
-    <div class="header--banner_optical_list">
-        <img src="../../../assets/images/pages/20230721/20230721Week03/product-header-1.png" alt="">
-        <img src="../../../assets/images/pages/20230721/20230721Week03/product-header-2.png" alt="">
+    <div class="header--banner_optical">
+      <ul class="header--banner_optical_list">
+        <li class="header--banner_optical_list_glasses"></li>
+        <li class="header--banner_optical_list_girl"></li>
+      </ul>
     </div>
-    <div class="header--banner_optical_list_display">
-        <img src="../../../assets/images/pages/20230721/20230721Week03/product-header-sm-1.png" alt="">
-        <img src="../../../assets/images/pages/20230721/20230721Week03/product-header-sm-2.png" alt="">
-    </div>
-  </div>
-  
-  <%- include('./layout/20230721/footer'); -%>
 
-      <script type="module" src="../../../main/20230721Week03.js"></script>
-</body>
+    <%- include('./layout/20230721/footer'); -%>
 
+    <script type="module" src="../../../main/20230721Week03.js"></script>
+  </body>
 </html>

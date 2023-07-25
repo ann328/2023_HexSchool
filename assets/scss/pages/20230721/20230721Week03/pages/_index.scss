@@ -1,7 +1,6 @@
 .header--banner {
-  background-image: url(../../../../images/pages/20230721/20230721Week03/home-header.png);
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat
+    url(../../../../images/pages/20230721/20230721Week03/home-header.png);
   &-contain {
     @include container;
     padding: 296px 0;
@@ -26,14 +25,16 @@
     font-size: 20px;
   }
   @include pc {
-    background-image: url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
     &-contain {
       padding: 296px 36px;
     }
   }
 
   @include tab {
-    background-image: url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/home-header-sm.png);
     &-contain {
       padding: 296px 36px;
     }
@@ -195,9 +196,8 @@
   }
 }
 .section--item_jointName {
-  background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg.png);
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat
+    url(../../../../images/pages/20230721/20230721Week03/index-bg.png);
   padding: 80px 0;
   .section--contain_jointName {
     @include container;
@@ -209,8 +209,21 @@
     }
     &_list {
       display: flex;
-      &_display {
-        display: none;
+    }
+    &_img {
+      &_DOUBLE {
+        width: 648px;
+        min-height: 240px;
+        display: block;
+        background: center/cover no-repeat
+          url(../../../../images/pages/20230721/20230721Week03/home-section4-1.png);
+      }
+      &_YOUTH {
+        width: 648px;
+        min-height: 240px;
+        display: block;
+        background: center/cover no-repeat
+          url(../../../../images/pages/20230721/20230721Week03/home-section4-2.png);
       }
     }
     h3 {
@@ -220,18 +233,32 @@
     }
   }
   @include pc {
-    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
     background-size: cover;
     padding: 80px 36px;
     .section--contain_jointName {
       &_list {
         flex-direction: column;
         gap: 24px 0;
+      }
+      &_img {
+        &_DOUBLE {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-1.png);
+        }
+        &_YOUTH {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-2.png);
+        }
       }
     }
   }
   @include tab {
-    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/index-bg-sm.png);
     background-size: cover;
     padding: 80px 36px;
     .section--contain_jointName {
@@ -239,23 +266,39 @@
         flex-direction: column;
         gap: 24px 0;
       }
+      &_img {
+        &_DOUBLE {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-1.png);
+        }
+        &_YOUTH {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-2.png);
+        }
+      }
     }
   }
   @include phone {
-    background-image: url(../../../../images/pages/20230721/20230721Week03/index-bg-md.png);
-    // background-position: center;
+    background: cover/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/index-bg-md.png);
     padding: 40px 14px 40px 13px;
     .section--contain_jointName {
       h2 {
         font-size: 24px;
         margin-bottom: 24px;
       }
-      &_list {
-        display: none;
-        &_display {
-          display: flex;
-          flex-direction: column;
-          gap: 24px 0;
+      &_img {
+        &_DOUBLE {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-1-sm.png);
+        }
+        &_YOUTH {
+          width: 100%;
+          background: center/cover no-repeat
+            url(../../../../images/pages/20230721/20230721Week03/home-section4-2-sm.png);
         }
       }
     }

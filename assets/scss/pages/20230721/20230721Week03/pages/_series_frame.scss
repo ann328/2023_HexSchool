@@ -1,72 +1,86 @@
 .header--container_series_frame {
-    @include container;
+  @include container;
 
-    &_list {
-        display: flex;
-
-        li {
-            width: 432px;
-            text-align: center;
-            border: 1px solid #DCDCDC;
-        }
-
-        a {
-            font-size: 32px;
-            display: block;
-            color: #000;
-            padding: 24px 0 16px 0;
-            border-bottom: 8px solid #fff;
-
-            &:hover {
-                border-bottom: 8px solid $primary;
-            }
-        }
-    }
-
-    @include pc {
-        a {
-            font-size: 24px;
-            padding: 16px 0 8px 0;
-        }
-    }
-    @include tab{
-        a {
-            font-size: 24px;
-            padding: 16px 0 8px 0;
-        }
-    }
-    @include phone{
-        a {
-            font-size: 16px;
-        }
-    }
-}
-.header--banner_optical_list{
+  &_list {
     display: flex;
-    img{
-        width: 50%;
-        min-height: 296px;
+
+    li {
+      width: 432px;
+      text-align: center;
+      border: 1px solid #dcdcdc;
     }
-    &_display{
-        display: none;
-        img{
-            width: 50%;
-            min-height: 296px;
-        }
+
+    a {
+      font-size: 32px;
+      display: block;
+      color: #000;
+      padding: 24px 0 16px 0;
+      border-bottom: 8px solid #fff;
+
+      &:hover {
+        border-bottom: 8px solid $primary;
+      }
     }
-    @include tab{
-        display: none;
-        &_display{
-            display: flex;
-        }
+  }
+
+  @include pc {
+    a {
+      font-size: 24px;
+      padding: 16px 0 8px 0;
     }
-    @include phone{
-        display: none;
-        &_display{
-            display: flex;
-            img{
-                min-height: 45.9%;
-            }
-        }
+  }
+  @include tab {
+    a {
+      font-size: 24px;
+      padding: 16px 0 8px 0;
     }
+  }
+  @include phone {
+    a {
+      font-size: 16px;
+    }
+  }
+}
+.header--banner_optical_list {
+  display: flex;
+  &_glasses {
+    width: 50%;
+    min-height: 296px;
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/product-header-1.png);
+  }
+  &_girl {
+    width: 50%;
+    min-height: 296px;
+    background: center/cover no-repeat
+      url(../../../../images/pages/20230721/20230721Week03/product-header-2.png);
+  }
+  @include pc {
+    &_glasses {
+      background: center/cover no-repeat
+        url(../../../../images/pages/20230721/20230721Week03/product-header-sm-1.png);
+    }
+    &_girl {
+      background: center/cover no-repeat
+        url(../../../../images/pages/20230721/20230721Week03/product-header-sm-2.png);
+    }
+  }
+  @include tab {
+    &_glasses {
+      background: center/cover no-repeat
+        url(../../../../images/pages/20230721/20230721Week03/product-header-sm-1.png);
+    }
+    &_girl {
+      background: center/cover no-repeat
+        url(../../../../images/pages/20230721/20230721Week03/product-header-sm-2.png);
+    }
+  }
+  @include phone {
+    &_glasses {
+      min-height: 136px;
+    }
+    &_girl {
+      min-height: 136px;
+    }
+  }
 }
